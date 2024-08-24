@@ -1,6 +1,7 @@
 In this project, we'll work with a dataset of submissions to popular technology site Hacker News.
 
-hacker news logo
+![image](https://github.com/user-attachments/assets/fdd55cb7-2b79-48cc-b440-c0713ffe28aa)
+
 Hacker News is a site started by the startup incubator Y Combinator, where user-submitted stories (known as "posts") receive votes and comments, similar to reddit. Hacker News is extremely popular in technology and startup circles, and posts that make it to the top of the Hacker News listings can get hundreds of thousands of visitors as a result.
 
 Below are descriptions of the columns:
@@ -12,34 +13,18 @@ num_points: the number of points the post acquired, calculated as the total numb
 num_comments: the number of comments on the post
 author: the username of the person who submitted the post
 created_at: the date and time of the post's submission
+
 Here are the first few rows of the dataset:
 
-id	title	url	num_points	num_comments	author	created_at
-12224879	Interactive Dynamic Video	http://www.interactivedynamicvideo.com/	386	52	ne0phyte	8/4/2016 11:52
-10975351	How to Use Open Source and Shut the F*ck Up at the Same Time	http://hueniverse.com/2016/01/26/how-to-use-open-source-and-shut-the-fuck-up-at-the-same-time/	39	10	josep2	1/26/2016 19:30
-11964716	Florida DJs May Face Felony for April Fools' Water Joke	http://www.thewire.com/entertainment/2013/04/florida-djs-april-fools-water-joke/63798/	2	1	vezycash	6/23/2016 22:20
-11919867	Technology ventures: From Idea to Enterprise	https://www.amazon.com/Technology-Ventures-Enterprise-Thomas-Byers/dp/0073523429	3	1	hswarna	6/17/2016 0:01
-10301696	Note by Note: The Making of Steinway L1037 (2007)	http://www.nytimes.com/2007/11/07/movies/07stein.html?_r=0	8	2	walterbell	9/30/2015 4:12
+![image](https://github.com/user-attachments/assets/452c4832-e013-448c-bfb2-880e59f733a2)
+
 We're specifically interested in posts with titles that begin with either Ask HN or Show HN. Users submit Ask HN posts to ask the Hacker News community a specific question. Below are a few examples:
 
-Ask HN: How to improve my personal website?
-Ask HN: Am I the only one outraged by Twitter shutting down share counts?
-Ask HN: Aby recent changes to CSS that broke mobile?
+![image](https://github.com/user-attachments/assets/4eccf111-5523-4291-8e8d-699e5fbcca8f)
 
-Explain
-
-Copy
 Likewise, users submit Show HN posts to show the Hacker News community a project, product, or just something interesting. Below are a few examples:
 
-Show HN: Wio Link  ESP8266 Based Web of Things Hardware Development Platform'
-Show HN: Something pointless I made
-Show HN: Shanhu.io, a programming playground powered by e8vm
+![image](https://github.com/user-attachments/assets/d19d0845-32f1-431e-b0bf-f9d761166137)
 
-Explain
 
-Copy
-We'll compare these two types of posts to determine the following:
-
-Do Ask HN or Show HN receive more comments on average?
-Do posts created at a certain time receive more comments on average?
 Let's start by importing the libraries we need and reading the dataset into a list of lists.
